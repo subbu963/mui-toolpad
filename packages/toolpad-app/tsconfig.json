@@ -1,10 +1,4 @@
 {
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    },
-    "transpileOnly": true
-  },
   "compilerOptions": {
     "paths": {
       // TODO: remove when we move to typescript 4.7 (supports package exports)
@@ -37,7 +31,8 @@
     "sentry.server.config.js",
     "**/*.ts",
     "**/*.tsx",
-    "typings/**/*.d.ts"
+    "typings/**/*.d.ts",
+    "scripts/*.mts"
   ],
   "exclude": ["node_modules", "./scripts", "./public"]
 }
